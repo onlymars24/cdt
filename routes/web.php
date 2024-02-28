@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/qwe', function () {
     dd(env('MAIL_ADMIN'));
 });

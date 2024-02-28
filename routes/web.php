@@ -15,9 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     Mail::to(env('MAIL_ADMIN'))->send(new MailApply('Bvz', 'Molide', 'email'));
-//     // return view('welcome');
-// });
-
-// Route::post('/send/apply', [MailController::class, 'send']);
+Route::get('/', function () {
+    dd('hello world!');
+});

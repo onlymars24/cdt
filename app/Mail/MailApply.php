@@ -47,8 +47,8 @@ class MailApply extends Mailable
             view: 'apply',
             with: [
                 'name' => $this->name,
-                'email' => $this->phone,
-                'phone' => $this->email
+                'email' => $this->email,
+                'phone' => $this->phone
             ]
         );
     }

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Mail;
 class MailController extends Controller
 {
     public function send(Request $request){
-        // Mail::to(env('MAIL_ADMIN'))->send(new MailApply($request->name, $request->phone, $request->email));
+        Mail::to(env('MAIL_ADMIN'))->send(new MailApply($request->name, $request->phone, $request->email));
         return response([
             'all' => $request->all()
         ]);
